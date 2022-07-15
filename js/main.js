@@ -27,3 +27,13 @@ dropdownList.forEach(d => {
         menu.classList.add('drop-out')
     })
 })
+
+$('.owl-carousel').owlCarousel({    
+    dots:true,
+    
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+})
