@@ -60,6 +60,7 @@ ul {
     margin: 0 1em;
 }
 
+
 #master_header .master_header_top {
     padding-top: 32px;
     padding-bottom: 26px;
@@ -527,81 +528,372 @@ ul {
     font-family: 'Roboto', sans-serif;
 }
 
-.owl-carousel .item {
-    max-height: 422px;
-}
+
 
 .owl-carousel .item .item_field {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 34%;
-    right: 13%;
     display: flex;
+    padding-left: 33%;
+    padding-right: 10%;
+    height: 442px;
+    visibility: hidden;
+
+}
+
+
+.owl_field_left {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
 }
 
 .owl_field_right {
-    position: relative;
+    display: flex;
+    /* justify-content: center; */
+}
 
+.owl_text {
+    color: rgb(51, 62, 72);
+}
+
+.owl_button {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 17px;
+    padding: 14px 58px;
+    border-radius: 10px;
+    background-color: #fed700;
+}
+
+.owl_field_right .owl_img_main {
+    height: 100%;
 }
 
 .owl_field_right .owl_img {
-    position: absolute;
-    left: 0;
-    top: -50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    float: left;
 }
 
-.owl_field_right .owl_img img {
-    width: 520px !important;
+.width_auto {
+    width: auto !important;
+    height: 100%;
+
 }
-/* 59 15 */ 
-.bir_bir{
+
+
+.owl_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    height: 442px;
+    width: 100%;
+}
+
+/* owl-1 içerikeri************************* */
+.bir_bir {
     font-size: 66px;
-    font-weight: 300;  
+    font-weight: 300;
     line-height: 60px;
 }
-.bir_iki{
-    font-size: 59px;  
-    font-weight: 300; 
-    line-height: 60px; 
+
+.bir_iki {
+    font-size: 59px;
+    font-weight: 300;
+    line-height: 60px;
 }
-.bir_uc{
+
+.bir_uc {
     font-size: 15px;
     font-weight: 800;
-
 }
-.bir_dort{
+
+.bir_dort {
     font-size: 56px;
     font-weight: 600;
 }
 
+.bir_dort_from {
+    font-size: 14px;
+}
+
+.bir.dort sup {
+    font-size: 42px
+}
+
 .bir_bir.animate__animated.animate__fadeIn {
-    --animate-duration: 1s;   
-  }
+    animation-delay: 0.8s;
+    animation-duration: .3s;
+}
 
- .anim_delay{
-    animation-delay: 1s;
- }
-  
+.bir_iki.animate__animated.animate__fadeIn {
+    animation-delay: 1.0s;
+    animation-duration: .3s;
+}
 
-@media (max-width: 575.98px) {}
+.bir_uc.animate__animated.animate__fadeIn {
+    animation-delay: 1.2s;
+    animation-duration: .3s;
+}
+
+.bir_dort.animate__animated.animate__fadeIn {
+    animation-delay: 1.4s;
+    animation-duration: .3s;
+}
+
+.bir_bes.animate__animated.animate__fadeIn {
+    animation-delay: 1.6s;
+    animation-duration: .3s;
+}
+
+.my_anim_img {
+    animation-name: my_kf_anim_img;
+    animation-delay: 0.8s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes my_kf_anim_img {
+    from {
+        transform: translate(50%, 0);
+
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.my_anim_img_main {
+    animation-name: my_kf_anim_img_main;
+    animation-delay: 0.8s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes my_kf_anim_img_main {
+    from {
+        /* transform: translate(50%,0); */
+        width: 40%;
+    }
+
+    to {
+        /* transform: translate(0,0); */
+        width: 100%;
+    }
+}
+
+/* owl-2 içerikeri************************* */
+.iki_bir {
+    color: rgb(52, 188, 236);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.iki_iki {
+    color: rgb(51, 62, 72);
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 48px;
+    padding-bottom: 50px;
+}
+
+.iki_iki strong {
+    font-weight: 700;
+}
+
+.anim_sagdan {
+    animation-name: kf_sagdan;
+    animation-duration: .3s;
+    animation-delay: .8s;
+    animation-fill-mode: both;
+}
+
+@keyframes kf_sagdan {
+    from {
+        transform: translateX(50%);
+        visibility: hidden;
+    }
+
+    to {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+.hide_n_fill{
+    animation-name: kf_sagdan;
+    animation-fill-mode: both;
+}
+@keyframes kf_gizle {
+    from {
+        visibility: hidden !important;
+    }
+
+    to {
+        visibility: visible !important;
+    }
+}
+
+
+
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+
+.mobilBurayaGelecek {
+    height: 60px;
+    width: 100%;
+    background-color: green;
+}
+
+.filler {
+    width: 100%;
+    height: 600px;
+    background-color: cornflowerblue;
+    margin-bottom: 10px;
+
+}
+
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+
+    .owl-carousel .item .item_field,
+    .owl_bg {
+        max-height: 195px;
+    }
+
+    .owl-carousel .item .item_field {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .bir_bir {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    .bir_iki {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    .bir_uc {
+        font-size: 8px;
+        font-weight: 800;
+    }
+
+    .bir_dort {
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    .bir_dort_from {
+        font-size: 7px;
+        line-height: 1px;
+        padding-top: 11px;
+    }
+
+    .owl_button {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+        padding: 7px 27px;
+
+    }
+
+}
+
+@media (max-width: 413.98px) {
+
+    .owl-carousel .item .item_field,
+    .owl_bg {
+        max-height: 176px;
+    }
+}
+
+@media (max-width: 374.98px) {
+
+    .owl-carousel .item .item_field,
+    .owl_bg {
+        max-height: 151px;
+    }
+}
+
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .container {
         max-width: 540px;
     }
+
+    .owl-carousel .item .item_field,
+    .owl_bg {
+        max-height: 195px;
+    }
+
+    .owl-carousel .item .item_field {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
     .container {
         max-width: 720px;
     }
+
+    .owl-carousel .item .item_field,
+    .owl_bg {
+        height: 320px;
+    }
+
+    .owl-carousel .item .item_field {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .container {
         max-width: 960px;
     }
+
+    .owl-carousel .item .item_field,
+    .owl_bg {
+        height: 369px;
+    }
+
+    .owl-carousel .item .item_field {
+        padding-left: 15%;
+        padding-right: 0;
+    }
+
 }
 
 @media (min-width: 1200px) and (max-width: 1479.98px) {
@@ -614,13 +906,5 @@ ul {
     .container {
         max-width: 1430px;
     }
-
-}
-
-.filler {
-    width: 100%;
-    height: 450px;
-    background-color: cornflowerblue;
-    margin-bottom: 10px;
 
 }
