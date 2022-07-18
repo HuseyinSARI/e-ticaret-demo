@@ -56,9 +56,11 @@ $(document).ready(function () {
     })
 
     owl_slider.on("changed.owl.carousel", function (event) {
-        var itemNumber = event.item.index;
+        var itemNumber = event.page.index;
 
         $('.item_field').css("visibility", "hidden");
+
+        $('.item_field').addClass('animate__animated animate__fadeOut');
 
         $('.bir_bir').removeClass('animate__animated animate__fadeIn');
         $('.bir_iki').removeClass('animate__animated animate__fadeIn');
@@ -68,18 +70,26 @@ $(document).ready(function () {
         $('.bir_img_main').removeClass('my_anim_img_main');
         $('.bir_img').removeClass('my_anim_img');
 
-        $('.iki_img').removeClass('animate__animated animate__slideInLeft');
+        $('.iki_img').removeClass('my_slideInLeft');
+        $('.iki_bir').removeClass('my_slideInRight')
+        $('.iki_iki').removeClass('my_slideInUp');
+        $('.iki_uc').removeClass('my_fadeIn');
 
-
+        $('.uc_img_main').removeClass('my_anim_img_main');
+        $('.uc_img').removeClass('my_anim_img');
+        $('.uc_bir').removeClass('my_slideInRight')
+        $('.uc_iki').removeClass('my_slideInUp');
+        $('.uc_uc').removeClass('my_fadeIn');
 
         switch (itemNumber) {
-            case 2:
+            case 0:
 
                 $('.bir_bir').addClass('animate__animated animate__fadeIn');
                 $('.bir_iki').addClass('animate__animated animate__fadeIn');
                 $('.bir_uc').addClass('animate__animated animate__fadeIn');
                 $('.bir_dort').addClass('animate__animated animate__fadeIn');
                 $('.bir_bes').addClass('animate__animated animate__fadeIn');
+
                 $('.bir_img_main').addClass('my_anim_img_main');
                 $('.bir_img').addClass('my_anim_img');
 
@@ -88,11 +98,13 @@ $(document).ready(function () {
                 }, 799);
 
                 break;
+            case 1:
 
-            case 3:
+                $('.iki_img').addClass('my_slideInLeft');
 
-                $('.iki_img').addClass('animate__animated animate__slideInLeft');
-
+                $('.iki_bir').addClass('my_slideInRight');
+                $('.iki_iki').addClass('my_slideInUp');
+                $('.iki_uc').addClass('my_fadeIn');
 
 
                 setTimeout(function () {
@@ -100,11 +112,23 @@ $(document).ready(function () {
                 }, 799);
 
                 break;
-            case 4:
+            case 2:
+                $('.uc_img_main').addClass('my_anim_img_main');
+                $('.uc_img').addClass('my_anim_img');
 
+                $('.uc_bir').addClass('my_slideInRight');
+                $('.uc_iki').addClass('my_slideInUp');
+                $('.uc_uc').addClass('my_fadeIn');
+
+                setTimeout(function () {
+                    $(".item_field").css("visibility", "visible");
+                }, 799);
 
                 break;
             default:
+                setTimeout(function () {
+                    $(".item_field").css("visibility", "visible");
+                }, 799);
                 break;
         }
 

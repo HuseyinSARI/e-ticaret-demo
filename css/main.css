@@ -532,8 +532,8 @@ ul {
 
 .owl-carousel .item .item_field {
     display: flex;
-    padding-left: 33%;
-    padding-right: 10%;
+    padding-left: 31%;
+    padding-right: 8%;
     height: 442px;
     visibility: hidden;
 
@@ -671,7 +671,6 @@ ul {
     animation-delay: 0.8s;
     animation-duration: 1s;
     animation-fill-mode: both;
-
 }
 
 @keyframes my_kf_anim_img_main {
@@ -705,39 +704,53 @@ ul {
     font-weight: 700;
 }
 
-.anim_sagdan {
-    animation-name: kf_sagdan;
-    animation-duration: .3s;
-    animation-delay: .8s;
-    animation-fill-mode: both;
-}
-
-@keyframes kf_sagdan {
-    from {
-        transform: translateX(50%);
-        visibility: hidden;
-    }
-
-    to {
-        transform: translateX(0);
-        visibility: visible;
-    }
-}
-
-.hide_n_fill{
-    animation-name: kf_sagdan;
-    animation-fill-mode: both;
-}
 @keyframes kf_gizle {
-    from {
-        visibility: hidden !important;
-    }
-
-    to {
-        visibility: visible !important;
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
+.my_slideInLeft {   
+    animation: slideInLeft ,kf_gizle ;
+    animation-duration: .4s;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
+}
+.my_slideInRight{
+    animation: slideInRight ,kf_gizle ;
+    animation-duration: .4s;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+}
+.my_slideInUp{
+    animation: slideInUp ,kf_gizle ;
+    animation-duration: .4s;
+    animation-delay: 1.6s;
+    animation-fill-mode: both;
+}
+.my_fadeIn{
+    animation: fadeIn ,kf_gizle ;
+    animation-duration: .4s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+/* owl-3 içerikeri************************* */
+.uc_bir {
+    color: rgb(52, 188, 236);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.uc_iki {
+    color: rgb(51, 62, 72);
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 48px;
+    padding-bottom: 50px;
+}
+
+.uc_iki strong {
+    font-weight: 700;
+}
 
 
 /* **************************************************** */
