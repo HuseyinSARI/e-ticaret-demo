@@ -535,7 +535,7 @@ ul {
     padding-left: 31%;
     padding-right: 8%;
     height: 442px;
-    visibility: hidden;
+    /* visibility: hidden; */
 
 }
 
@@ -578,7 +578,7 @@ ul {
 
 .width_auto {
     width: auto !important;
-    height: 100%;
+    height: 110%;
 
 }
 
@@ -676,7 +676,7 @@ ul {
 @keyframes my_kf_anim_img_main {
     from {
         /* transform: translate(50%,0); */
-        width: 40%;
+        width: 38%;
     }
 
     to {
@@ -753,6 +753,20 @@ ul {
 }
 
 
+/* ************************************** */
+
+.owl-dots{
+    position: absolute;
+    bottom: 4%;
+    left: 28%;
+}
+
+.active span{
+    width: 35px !important;
+    background-color: #fed700 !important;
+}
+
+
 /* **************************************************** */
 /* **************************************************** */
 /* **************************************************** */
@@ -763,7 +777,7 @@ ul {
 /* **************************************************** */
 
 .mobilBurayaGelecek {
-    height: 60px;
+    height: 55px;
     width: 100%;
     background-color: green;
 }
@@ -804,42 +818,60 @@ ul {
 
     .bir_bir {
         font-size: 22px;
-        font-weight: 300;
-        line-height: 20px;
+        line-height: 22px;
     }
 
     .bir_iki {
         font-size: 22px;
-        font-weight: 300;
-        line-height: 20px;
+        line-height: 22px;
     }
 
     .bir_uc {
         font-size: 8px;
-        font-weight: 800;
     }
 
     .bir_dort {
         font-size: 19px;
-        font-weight: 600;
+        /* padding-bottom: 30px; */
     }
 
     .bir_dort_from {
-        font-size: 7px;
-        line-height: 1px;
+        font-size: 8px;
+        line-height: 3px;
         padding-top: 11px;
     }
 
     .owl_button {
         font-size: 14px;
-        font-weight: 300;
-        line-height: 18px;
+        line-height: 14px;
         padding: 7px 27px;
+    }
 
+    .iki_bir {
+        font-size: 10px;
+        line-height: 30px;
+
+    }
+    
+    .iki_iki {
+        font-size: 16px;
+        line-height: 18px;
+        padding-bottom: 15px;
+    }
+
+    .uc_bir {
+        font-size: 10px;
+        line-height: 30px;
+    }
+    
+    .uc_iki {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 15px;
     }
 
 }
-
+/*****************************************/
 @media (max-width: 413.98px) {
 
     .owl-carousel .item .item_field,
@@ -854,7 +886,7 @@ ul {
     .owl_bg {
         max-height: 151px;
     }
-}
+}/*****************************************/
 
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -890,6 +922,54 @@ ul {
         padding-right: 0;
     }
 
+    .bir_bir {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    .bir_iki {
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    .bir_uc {
+        font-size: 15px;
+    }
+
+    .bir_dort {
+        font-size: 49px;
+    }
+
+    .bir_dort_from {
+        font-size: 12px;
+        line-height: 1px;
+        padding-top: 11px;
+    }
+
+    .owl_button {
+        font-size: 18px;
+        line-height: 18px;
+        padding: 14px 45px;
+    }
+    .iki_bir {
+        font-size: 16px;
+    }
+    
+    .iki_iki {
+        font-size: 40px;
+        line-height: 35px;
+        padding-bottom: 30px;
+    }
+    .uc_bir {
+        font-size: 16px;
+    }
+    
+    .uc_iki {
+        font-size: 40px;
+        line-height: 35px;
+        padding-bottom: 30px;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -907,6 +987,54 @@ ul {
         padding-right: 0;
     }
 
+    .bir_bir {
+        font-size: 58px;
+        line-height: 55px;
+    }
+
+    .bir_iki {
+        font-size: 52px;
+        line-height: 55px;
+    }
+
+    .bir_uc {
+        font-size: 12px;
+    }
+
+    .bir_dort {
+        font-size: 49px;
+    }
+
+    .bir_dort_from {
+        font-size: 12px;
+        line-height: 1px;
+        padding-top: 11px;
+    }
+
+    .owl_button {
+        font-size: 18px;
+        line-height: 18px;
+        padding: 14px 45px;
+    }
+    .iki_bir {
+        font-size: 16px;
+    }
+    
+    .iki_iki {
+        font-size: 40px;
+        line-height: 48px;
+        padding-bottom: 30px;
+    }
+    .uc_bir {
+        font-size: 16px;
+    }
+    
+    .uc_iki {
+        font-size: 40px;
+        line-height: 48px;
+        padding-bottom: 30px;
+    }
+    
 }
 
 @media (min-width: 1200px) and (max-width: 1479.98px) {

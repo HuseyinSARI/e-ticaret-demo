@@ -45,12 +45,17 @@ $(document).ready(function () {
 
     owl_slider.owlCarousel({
         loop: true,
-        dots: true,
-        // autoplay: true,
-        // autoplayTimeout :10000,        
+        dots: false,
+        animateOut: 'fadeOut',
+        autoplay: true,
+        autoplayTimeout :10000,        
         responsive: {
             0: {
                 items: 1
+            },
+            1200: {
+                items: 1,
+                dots:true
             }
         }
     })
@@ -58,9 +63,8 @@ $(document).ready(function () {
     owl_slider.on("changed.owl.carousel", function (event) {
         var itemNumber = event.page.index;
 
-        $('.item_field').css("visibility", "hidden");
+        // $('.item_field').css("visibility", "hidden");
 
-        $('.item_field').addClass('animate__animated animate__fadeOut');
 
         $('.bir_bir').removeClass('animate__animated animate__fadeIn');
         $('.bir_iki').removeClass('animate__animated animate__fadeIn');
@@ -70,7 +74,7 @@ $(document).ready(function () {
         $('.bir_img_main').removeClass('my_anim_img_main');
         $('.bir_img').removeClass('my_anim_img');
 
-        $('.iki_img').removeClass('my_slideInLeft');
+        $('.iki_img_main').removeClass('my_slideInLeft');
         $('.iki_bir').removeClass('my_slideInRight')
         $('.iki_iki').removeClass('my_slideInUp');
         $('.iki_uc').removeClass('my_fadeIn');
@@ -93,23 +97,23 @@ $(document).ready(function () {
                 $('.bir_img_main').addClass('my_anim_img_main');
                 $('.bir_img').addClass('my_anim_img');
 
-                setTimeout(function () {
-                    $(".item_field").css("visibility", "visible");
-                }, 799);
+                // setTimeout(function () {
+                //     $(".item_field").css("visibility", "visible");
+                // }, 799);
 
                 break;
             case 1:
 
-                $('.iki_img').addClass('my_slideInLeft');
+                $('.iki_img_main').addClass('my_slideInLeft');
 
                 $('.iki_bir').addClass('my_slideInRight');
                 $('.iki_iki').addClass('my_slideInUp');
                 $('.iki_uc').addClass('my_fadeIn');
 
 
-                setTimeout(function () {
-                    $(".item_field").css("visibility", "visible");
-                }, 799);
+                // setTimeout(function () {
+                //     $(".item_field").css("visibility", "visible");
+                // }, 799);
 
                 break;
             case 2:
@@ -120,15 +124,15 @@ $(document).ready(function () {
                 $('.uc_iki').addClass('my_slideInUp');
                 $('.uc_uc').addClass('my_fadeIn');
 
-                setTimeout(function () {
-                    $(".item_field").css("visibility", "visible");
-                }, 799);
+                // setTimeout(function () {
+                //     $(".item_field").css("visibility", "visible");
+                // }, 799);
 
                 break;
             default:
-                setTimeout(function () {
-                    $(".item_field").css("visibility", "visible");
-                }, 799);
+                // setTimeout(function () {
+                //     $(".item_field").css("visibility", "visible");
+                // }, 799);
                 break;
         }
 
