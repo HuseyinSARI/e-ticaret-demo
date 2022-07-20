@@ -28,7 +28,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/main.js" defer></script>
@@ -36,12 +38,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
 
     <div id="all_site">
-
+        <!-- offcanvas side menu -->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
@@ -67,7 +70,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- pre header info -->
         <div class="top_bar hidden-lg-down d-none d-xl-block clearfix">
             <div class="container">
                 <ul id="menu_top_bar_left" class="nav">
@@ -104,6 +107,7 @@
                 </ul>
             </div>
         </div>
+        <!-- desktop and mobile headers -->
         <header id="master_header">
             <div class="container d-none d-xl-block">
                 <div class="master_header_top row align-items-center">
@@ -660,7 +664,7 @@
                 </div>
             </div>
         </header>
-
+        <!-- main owl slider -->
         <div class="position-relative">
             <img class="col owl_bg" src="img/owl/background.jpg" alt="owl background image">
             <div class="container">
@@ -737,6 +741,7 @@
         <div class="content_1">
             <div class="container">
                 <div class="row">
+                    <!--overflow slider-->
                     <div class="col-12 ">
                         <div class="row no_wrap pt-4 pb-4">
                             <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
@@ -805,6 +810,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- deals offer -->
                     <div class="col-12 col-md-6 col-lg-5 col-xl-4 col-xxl-4  ">
                         <div class="deals">
                             <div class="deals_header">
@@ -846,12 +852,14 @@
                             </div>
                         </div>
                     </div>
+                    <!-- tab menu contents -->
                     <div class="col-12 col-md-6 col-lg-7 col-xl-8 col-xxl-8 ">
                         <div class="products_tabs">
                             <div class="tab_menu">
                                 <ul class="nav ">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#tab-products-1" data-bs-toggle="tab">Featured</a>
+                                        <a class="nav-link active" href="#tab-products-1"
+                                            data-bs-toggle="tab">Featured</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#tab-products-2" data-bs-toggle="tab">On Sale</a>
@@ -862,25 +870,1028 @@
                                 </ul>
                             </div>
                             <div class="tab_contents">
-                                <div class="tab-pane" id="tab-products-1" role="tabpanel">
+                                <div class="tab-pane active" id="tab-products-1" role="tabpanel">
                                     <div class="row">
-                                        <div class="col-xxl-3">
-                                            <div class="card_tab"></div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Audio Speakers</h6>
+                                                        <h5>Wireless Audio System Multiroom 360</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/WirelessSound-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $2,299.00
+                                                        </div>
+                                                        <div class="ct_price_right" data-toggle="tooltip"
+                                                            data-bs-placement="top" title="Add to cart">
+                                                            <a href="" class="button cart">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-xxl-3"></div>
-                                        <div class="col-xxl-3"></div>
-                                        <div class="col-xxl-3"></div>
-                                        <div class="col-xxl-3"></div>
-                                        <div class="col-xxl-3"></div>
-                                        <div class="col-xxl-3"></div>
-                                        <div class="col-xxl-3"></div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Laptops, Ultrabooks</h6>
+                                                        <h5>Tablet Red EliteBook Revolve 810 G2</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/apptablet-300x300.png"
+                                                            alt=" Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            <del>
+                                                                $2,299.00
+                                                            </del>
+                                                            $2,100.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Headphones</h6>
+                                                        <h5>White Solo 2 Wireless</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/uniheadphone-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $2,299.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button arrow" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Read More">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Smartphones</h6>
+                                                        <h5>Smartphone 6S 32GB LTE</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/GoldPhone-1-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            <del>
+                                                                $1,215.00
+                                                            </del>
+                                                            $1,100.00
+
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button arrow" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Read More">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Cameras</h6>
+                                                        <h5>Purple NX Mini F1 aparat SMART NX</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/camera2-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $559.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Printers</h6>
+                                                        <h5>Full Color LaserJet Pro M452dn</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/printer-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $1,050.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3 d-md-none d-xxl-block">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Game Consoles, Gaming</h6>
+                                                        <h5>GameConsole Destiny Special Edition</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/game1-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $150.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3 d-md-none d-xxl-block">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Cameras</h6>
+                                                        <h5>Camera C430W 4k Waterproof</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/videocamera-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $590.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="tab-products-2" role="tabpanel">2</div>
-                                <div class="tab-pane" id="tab-products-3" role="tabpanel">3</div>
+                                <div class="tab-pane" id="tab-products-2" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Smartphones</h6>
+                                                        <h5>Smartphone 6S 32GB LTE</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/GoldPhone-1-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $1,100.00
+                                                            <del>
+                                                                $1,215.00
+                                                            </del>
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Cameras</h6>
+                                                        <h5>Purple NX Mini F1 aparat SMART NX</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/camera2-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $559.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Printers</h6>
+                                                        <h5>Full Color LaserJet Pro M452dn</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/printer-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $1,050.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Audio Speakers</h6>
+                                                        <h5>Wireless Audio System Multiroom 360</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/WirelessSound-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $2,299.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Laptops, Ultrabooks</h6>
+                                                        <h5>Tablet Red EliteBook Revolve 810 G2</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/apptablet-300x300.png"
+                                                            alt=" Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $2,100.00
+                                                            <del>
+                                                                $2,299.00
+                                                            </del>
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Headphones</h6>
+                                                        <h5>White Solo 2 Wireless</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/uniheadphone-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $2,299.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3 d-md-none d-xxl-block">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Game Consoles, Gaming</h6>
+                                                        <h5>GameConsole Destiny Special Edition</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/game1-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $150.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3 d-md-none d-xxl-block">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Cameras</h6>
+                                                        <h5>Camera C430W 4k Waterproof</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/videocamera-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $590.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab-products-3" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Printers</h6>
+                                                        <h5>Full Color LaserJet Pro M452dn</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/printer-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $1,050.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Audio Speakers</h6>
+                                                        <h5>Wireless Audio System Multiroom 360</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/WirelessSound-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $2,299.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Smartphones</h6>
+                                                        <h5>Smartphone 6S 32GB LTE</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/GoldPhone-1-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $1,100.00
+                                                            <del>
+                                                                $1,215.00
+                                                            </del>
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Cameras</h6>
+                                                        <h5>Purple NX Mini F1 aparat SMART NX</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/camera2-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $559.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Laptops, Ultrabooks</h6>
+                                                        <h5>Tablet Red EliteBook Revolve 810 G2</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/apptablet-300x300.png"
+                                                            alt=" Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $2,100.00
+                                                            <del>
+                                                                $2,299.00
+                                                            </del>
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Headphones</h6>
+                                                        <h5>White Solo 2 Wireless</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/uniheadphone-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $2,299.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3 d-md-none d-xxl-block">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Game Consoles, Gaming</h6>
+                                                        <h5>GameConsole Destiny Special Edition</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/game1-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $150.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-4 col-xxl-3 d-md-none d-xxl-block">
+                                            <div class="ct_main">
+                                                <div class="ct">
+                                                    <div class="ct_header">
+                                                        <h6>Cameras</h6>
+                                                        <h5>Camera C430W 4k Waterproof</h5>
+                                                    </div>
+                                                    <div class="ct_img">
+                                                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2016/03/videocamera-300x300.png"
+                                                            alt="Wireless Speaker Img 300x300">
+                                                    </div>
+                                                    <div class="ct_price">
+                                                        <div class="ct_price_left">
+                                                            $590.00
+                                                        </div>
+                                                        <div class="ct_price_right">
+                                                            <a href="" class="button cart" data-toggle="tooltip"
+                                                                data-bs-placement="top" title="Add to cart">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ct_footer">
+                                                        <div class="ct_footer_left">
+                                                            <a href="">
+                                                                <i class="ec ec-favorites"></i>
+                                                                <span>Wishlist</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="ct_footer_right">
+                                                            <a href="">
+                                                                <i class="ec ec-compare"></i>
+                                                                <span>Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_2">
+            <div class="content_2_bg">
+                <div class="container">
+                    <div class="v_cols_nav">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="" class="nav-link active"> Best Deals </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link "> TV & Audi </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link "> Cameras </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link "> Audio </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link "> Smartphones </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link "> GPS & Navi </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link "> Computers </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link "> Portable Audio </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link "> Accessories </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="v_cols_contents">
+                        <div class="row randomColor h_300">
+                            <div class="col-12 col-md-3 col-xxl-4">
+                                <div class="row randomColor">
+                                    <div class="col-12 col-md-12 col-xxl-6 h_150">1</div>
+                                    <div class="col-12 col-md-12 col-xxl-6 h_150">2</div>
+                                    <div class="col-12 col-xxl-6 d-md-none d-xxl-block h_150">3</div>
+                                    <div class="col-12 col-xxl-6 d-md-none d-xxl-block h_150">4</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xxl-4 ">5</div>
+                            <div class="col-12 col-md-3 col-xxl-4">
+                                <div class="row randomColor">
+                                    <div class="col-12 col-md-12 col-xxl-6 h_150">6</div>
+                                    <div class="col-12 col-md-12 col-xxl-6 h_150">7</div>
+                                    <div class="col-12 col-xxl-6 d-md-none d-xxl-block h_150">8</div>
+                                    <div class="col-12 col-xxl-6 d-md-none d-xxl-block h_150">9</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -891,10 +1902,10 @@
 
         <div class="container-fluid bg-success">
             <div class="container bg-info">
-                <div class="row">
-                    <div class="filler">
-
-                    </div>
+                <div class="filler">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nesciunt odio nisi architecto itaque
+                    nihil cupiditate sunt ab reprehenderit molestias ducimus dolorum, hic, omnis iure modi laboriosam
+                    eveniet earum explicabo.
                 </div>
 
             </div>

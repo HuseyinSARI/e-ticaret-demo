@@ -1,8 +1,9 @@
 
-
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
+
 });
+
 
 const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
 const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl));
@@ -87,7 +88,7 @@ $(document).ready(function () {
 
 
         switch (itemNumber) {
-            case 0:  
+            case 0:
                 $('.bir_bir').addClass('animate__animated animate__fadeIn');
                 $('.bir_iki').addClass('animate__animated animate__fadeIn');
                 $('.bir_uc').addClass('animate__animated animate__fadeIn');
@@ -168,3 +169,17 @@ var x = setInterval(function () {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+const colsx = $('.randomColor>*');
+
+colsx.each(function (index, value) {
+    const randomColor = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+    this.style.backgroundColor = random_bg_color();
+});
+
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = 100 + Math.floor(Math.random() * 256);
+    var z = 50 + Math.floor(Math.random() * 256);
+    return "rgb(" + x + "," + y + "," + z + ")";
+}
