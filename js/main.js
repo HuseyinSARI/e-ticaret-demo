@@ -31,7 +31,7 @@ dropdownList.forEach(d => {
 
 
 $(document).ready(function () {
-    var owl_slider = $('.owl-carousel');
+    var owl_slider = $('.main_slider');
 
     $('.bir_bir').addClass('animate__animated animate__fadeIn');
     $('.bir_iki').addClass('animate__animated animate__fadeIn');
@@ -183,3 +183,45 @@ function random_bg_color() {
     var z = 50 + Math.floor(Math.random() * 256);
     return "rgb(" + x + "," + y + "," + z + ")";
 }
+
+
+$('.owl_slider_1').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:false,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        }
+        
+    }
+})
+
+$('.owl_slider_2').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:false,
+    dots:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        480:{
+            items:3
+        },
+        768:{
+            items:4
+        },
+        992:{
+            items:5
+        },
+        1200:{
+            items:6
+        },
+        1480:{
+            items:7
+        }
+        
+    }
+})
