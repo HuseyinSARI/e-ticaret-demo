@@ -186,42 +186,66 @@ function random_bg_color() {
 
 
 $('.owl_slider_1').owlCarousel({
-    loop:false,
-    margin:10,
-    nav:false,
-    dots:true,
-    responsive:{
-        0:{
-            items:1
+    loop: false,
+    margin: 10,
+    nav: false,
+    dots: true,
+    responsive: {
+        0: {
+            items: 1
         }
-        
+
     }
 })
 
 $('.owl_slider_2').owlCarousel({
-    loop:false,
-    margin:10,
-    nav:false,
-    dots:true,
-    responsive:{
-        0:{
-            items:2
+    loop: false,
+    margin: 10,
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 2
         },
-        480:{
-            items:3
+        480: {
+            items: 3
         },
-        768:{
-            items:4
+        768: {
+            items: 4,
+            dots: true
         },
-        992:{
-            items:5
+        992: {
+            items: 5,
+            dots: true
         },
-        1200:{
-            items:6
+        1200: {
+            items: 6,
+            dots: true
+
         },
-        1480:{
-            items:7
+        1480: {
+            items: 7,
+            dots: true
         }
-        
+    }
+})
+
+
+$('.slider_ref .owl-carousel').owlCarousel({
+    loop: false,
+    margin: 10,
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 2
+        },
+        992: {
+            items: 3,
+        },
+        1200: {
+            items: 5,
+        }
+
     }
 })
