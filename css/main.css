@@ -2054,7 +2054,7 @@ ul {
 }
 .mobile_footer .collapsing{
     background-color: white;
-
+    margin-bottom: 8px;
 }
 .mobile_footer .collapse{
     background-color: white;
